@@ -1,0 +1,77 @@
+body {
+    background-image: url("https://image.freepik.com/fotos-gratis/estrelas-e-galaxia-espaco-sideral-ceu-noite-universo-preto_146539-811.jpg");
+	font-family: 'Verdana', sans-serif;
+}
+
+.calculadora-dano {
+    margin-left: 14%;
+    margin-right: 14%;
+    border: 5px solid red;
+    border-radius: 20px;
+    background-color: rgba(153, 152, 152, 0.288);
+}
+
+.linha {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: rgb(209, 190, 18);
+    font-size: larger;
+    text-decoration: underline;
+    border-radius: 20px;
+    margin-top: 1%;
+}
+.linha-container {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: rgb(209, 190, 18);
+    margin-top: 5%;
+}
+
+.elementos-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: rgb(236, 214, 8);
+    border: 2px solid #FF7F00;
+    border-radius: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 8px
+}
+
+.elemento {
+    cursor: pointer;
+}
+
+.elemento p {
+    text-align: center;
+    font-weight: bold;
+}
+
+button {
+    background-color: rgba(255, 0, 34, 0.829);
+    border: none;
+    border-radius: 10px;
+    color: rgb(255, 255, 254);
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.selecionado {
+    border: 2px solid rgb(255, 94, 0);
+    background-color: rgba(255, 0, 0, 0.397);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#dano {
+    font-size: medium;
+    font-weight: bold;
+}

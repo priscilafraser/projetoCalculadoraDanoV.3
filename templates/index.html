@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora de Dano - RPG</title>
+        <link rel='stylesheet' href='static/style.css'>
+    </head>
+    <body onload="iniciar()">
+        <div class="calculadora-dano">
+            <div class="linha">
+                <h1 class="titulo pula-linha">Calculadora de Dano</h1>
+            </div>
+
+            <div class="linha-container">
+                <h2>Selecione um personagem</h2>
+            </div>
+
+            <div class="bloco_info" id="bloco_humor"></div>
+            
+
+            <div class="elementos-container">
+                <div class="elemento personagem" id="yoda" >
+                    
+                        <img 
+                            src="{{imagemyoda}}" 
+                            alt="Yoda" 
+                            width="170"
+                            height="200" 
+                        />
+                        <p>Yoda</p>
+                    
+                </div>
+
+                <div class="elemento personagem" id="vader">
+                    
+                    <img
+                        center
+                        src="{{imagemvader}}"
+                        alt="Vader"
+                        width="150"
+                        height="200"
+                        />
+                    <p>Darth Vader</p>
+                    
+                </div>
+            
+
+                <div class="elemento personagem" id="luke">
+                    
+                    <img
+                        src="{{imagemluke}}"
+                        alt="HanSolo"
+                        width="150"
+                        height="200"
+                        />
+                    <p>Luke Skywalker</p>
+                    
+                    
+                </div>       
+                
+                
+                <div class="elemento personagem" id="imperador">
+                    <img
+                        src="{{imagemimperador}}"
+                        alt="Imperador"
+                        width="150"
+                        height="200"
+                    />
+                    <p>Imperador</p>
+                </div>
+
+                <div class="elemento personagem" id="hansolo">
+                    <img
+                        src="{{imagemhan}}"
+                        alt="HanSolo"
+                        width="150"
+                        height="200"
+                    />
+                    <p>Han Solo</p>
+                </div>
+
+                <div class="elemento personagem" id="princesa">
+                    <img
+                        src="{{imagemleia}}"
+                        alt="Princesa"
+                        width="150"
+                        height="200"
+                    />
+                    <p>Princesa Leia</p>
+                </div>
+
+                <div class="elemento personagem" id="chewbacca">
+                    <img
+                        src="{{imagemchewy}}"
+                        alt="Chewbacca"
+                        width="150"
+                        height="200"
+                    />
+                    <p>Chewbacca</p>
+                </div>
+
+                <div class="elemento personagem" id="troop">
+                    <img
+                        src="{{imagemtroop}}"
+                        alt="Troop"
+                        width="150"
+                        height="200"
+                    />
+                    <p>StormTrooper</p>
+                </div>             
+            </div>
+        
+
+
+
+            <div class="linha-container">
+                <h2>Selecione uma arma</h2>
+            </div>
+
+            <div class="elementos-container">
+                <div class="elemento arma" id="sabrevermelho">
+                    <img
+                        src="{{sabrevermelho}}"
+                        alt="Sabre"
+                        width="150"
+                        height="200"
+                    />
+                    <p>Sabre de luz</p>
+                </div>
+
+                <div class="elemento arma" id="armachewbacca">
+                    <img
+                        src="{{armachewy}}"
+                        alt="Arco"
+                        width="150"
+                        height="200"
+                    />
+                    <p>Besta</p>
+                </div>
+
+
+                <div class="elemento arma" id="sabreverde">
+                    <img
+                        src="{{sabreverde}}"
+                        alt="Sabre"
+                        width="150"
+                        height="200"
+                    />
+                    <p>Sabre de luz</p>
+                </div>
+
+
+                <div class="elemento arma" id="armahan">
+                    <img
+                        src="{{armahan}}"
+                        alt="ArmaHan"
+                        width="150"
+                        height="200"
+                    />
+                    <p>Arma HanSolo</p>
+                </div>
+
+                <div class="elemento arma" id="armaleia">
+                    <img
+                        src="{{armaleia}}"
+                        alt="ArmaLeia"
+                        width="200"
+                        height="160"
+                    />
+                    <p>Arma Princesa Leia</p>
+                </div>
+
+                <div class="elemento arma" id="armatroop">
+                    <img
+                        src="{{armatroop}}"
+                        alt="ArmaTrooper"
+                        width="200"
+                        height="160"
+                    />
+                    <p>Arma StormTrooper</p>
+                </div>
+            </div>
+
+            <div class="linha-container">
+                <h2>Selecione uma nave</h2>
+            </div>
+
+            <div class="elementos-container">
+                <div class="elemento nave" id="falcon">
+                    <img
+                        src="{{navemillenium}}"
+                        alt="Falcon"
+                        width="200"
+                        height="200"
+                    />
+                    <p>Millenium Falcon</p>
+                </div>
+                <div class="elemento nave" id="navevader">
+                    <img
+                        src="{{navevader}}"
+                        alt="NaveVader"
+                        width="200"
+                        height="200"
+                    />
+                    <p>TIE Avançado X1</p>
+                </div>
+                <div class="elemento nave" id="imperador">
+                    <img
+                        src="{{naveimperador}}"
+                        alt="Naveimperador"
+                        width="200"
+                        height="200"
+                    />
+                    <p>Shuttle Classe Lambda</p>
+                </div>
+            </div>
+
+
+            <div class="tipo">
+                <button id="calcular" type="button">Calcular Dano</button>
+            </div>
+
+            <div class="tipo">
+                <span id="dano"></span>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="static/index.js">
+        </script>
+    </body>
+</html>
