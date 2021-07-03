@@ -1,6 +1,7 @@
 body {
     background-image: url("https://image.freepik.com/fotos-gratis/estrelas-e-galaxia-espaco-sideral-ceu-noite-universo-preto_146539-811.jpg");
 	font-family: 'Verdana', sans-serif;
+    margin: auto;
 }
 
 .calculadora-dano {
@@ -10,6 +11,8 @@ body {
     border-radius: 20px;
     background-color: rgba(153, 152, 152, 0.288);
 }
+
+
 
 .linha {
     display: flex;
